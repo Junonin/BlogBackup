@@ -5,10 +5,16 @@ categories:
   - Tools
 top: 100
 abbrlink: d67c4ae5
+description: Typora
 date: 2020-09-28 00:00:00
 ---
 
-### Github
+## 文章说明
+
+> Typora的图床设置
+>
+
+## Github
 
 ```json
 {
@@ -29,7 +35,7 @@ date: 2020-09-28 00:00:00
 }
 ```
 
-### 七牛云
+## 七牛云
 
 ```json
 {
@@ -51,7 +57,7 @@ date: 2020-09-28 00:00:00
 }
 ```
 
-### SM.MS
+## SM.MS
 
 ```json
 {

@@ -5,12 +5,17 @@ categories:
   - Linux
 top: 100
 abbrlink: cab4360e
+description: centos
 date: 2020-06-01 00:00:00
 ---
 
-### 网络配置
+## 前言
 
-查看网络配置
+> Centos学习记录
+
+## 网络配置
+
+###### 查看网络配置
 
 ```shell
 ip addr 	
@@ -22,7 +27,7 @@ cd /sbin   可以用    ls | grep "if" 查看是否存在ifconfig命令
 sudo yum install net-tools
 ```
 
-配置文件位置
+###### 配置文件位置
 
 ```shell
 cat /etc/sysconfig/network-scripts/ifcfg-eth33
@@ -47,7 +52,7 @@ service network restart #重启网络配置
 
 
 
-### SSH远程登录
+## SSH远程登录
 
 ```shell
 yum list installed | grep openssh-server #查看是否安装了openssh-server
@@ -74,9 +79,9 @@ sudo systemctl enable sshd				#添加自启动列表
 
 
 
-### 防火墙端口
+## 防火墙端口
 
-##### 开放端口
+###### 开放端口
 
 ```shell
 # 开放8080端口
@@ -91,7 +96,7 @@ firewall-cmd --reload
 
  
 
-##### 查看防火墙所有开放的端口
+###### 查看防火墙所有开放的端口
 
 ```shell
 firewall-cmd --zone=public --list-ports
@@ -99,7 +104,7 @@ firewall-cmd --zone=public --list-ports
 
  
 
-##### 关闭防火墙
+###### 关闭防火墙
 
 如果要开放的端口太多，嫌麻烦，可以关闭防火墙，安全性自行评估
 
@@ -109,7 +114,7 @@ systemctl stop firewalld.service
 
  
 
-##### 查看防火墙状态
+###### 查看防火墙状态
 
 ```shell
 firewall-cmd --state
@@ -117,7 +122,7 @@ firewall-cmd --state
 
  
 
-##### 查看监听的端口
+###### 查看监听的端口
 
 ```shell
 netstat -lnpt
@@ -130,8 +135,6 @@ netstat -lnpt
 ```shell
 yum install -y net-tools
 ```
-
- 
 
  
 

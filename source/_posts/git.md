@@ -5,6 +5,7 @@ categories:
   - Tools
 top: 100
 abbrlink: 69c3279c
+description: git
 date: 2019-09-23 00:00:00
 ---
 
@@ -24,7 +25,7 @@ date: 2019-09-23 00:00:00
 > * 然后在GitHub导入SSH密匙（C:\Users\JUNO\.ssh\id_rsa.pub）
 <!--more-->
 
-### git绑定远程仓库
+## git绑定远程仓库
 ```
 git remote add origin https://github.com/junonin/junonin.github.io.git
 ```
@@ -37,7 +38,7 @@ git remote -v
 git remote rm github
 ```
 
-### git pull
+## git pull
 **git pull命令的作用是：取回远程主机某个分支的更新，再与本地的指定分支合并。**
 ```
 git pull = git fetch + git merge
@@ -62,7 +63,7 @@ git merge local
 ```
 **相比起来git fetch更安全一些，因为再merge前，我们可以查看更新的情况，决定是否合并分支**
 
-### git push
+## git push
 **git push命令的作用是：将本地版本库的分支推送到远程服务器上对应的分支。**
 基本用法：
 ```
@@ -92,22 +93,6 @@ git push origin –delete master
 
 
 
-
-
-## 重新部署恢复 Hexo
-```
-npm install hexo-cli -g
-```
-> * 保留_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，gulpfile.js 这些项目在目录下`Git bash`
-```
-npm install
-npm install hexo-deployer-git --save
-hexo clean && hexo g && hexo s
-```
-查看是否本地可以运行[Hexo](http://localhost:4000/)发布
-```
-hexo d
-```
 
 
 

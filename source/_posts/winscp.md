@@ -5,8 +5,17 @@ categories:
   - Tools
 top: 100
 abbrlink: e9a5b8d2
+description: winscp,ftp
 date: 2020-08-29 00:00:00
 ---
+
+## 文章说明
+
+> 为了方便同步不在同一局域网内的机器，使用定时器执行以下脚本(需要安装winscp)，定时同步文件
+
+
+
+## bat脚本
 
 创建xxx.bat脚本调用run.txt
 
@@ -28,7 +37,9 @@ pause
 
 
 
-创建run.txt
+## run.txt
+
+ftp使用的run.txt
 
 ```xml
 # winscp.exe /console /script=sample.txt 

@@ -5,10 +5,17 @@ categories:
   - Docker
 top: 100
 abbrlink: f5f9fa9b
+description: docker
 date: 2020-08-24 00:00:00
 ---
 
-##### Dcoker依的赖环境
+## 前言
+
+> Docker学习记录
+
+
+
+## Dcoker依的赖环境
 
 ```sh
 yum -y install yum-utils device-mapper-persistent-data lvm2
@@ -21,7 +28,9 @@ yum -y install docker-ce
 
 ```
 
-##### 设置中央仓库
+
+
+## 设置中央仓库
 
 ```java
 1.Docker官方的中央仓库：这个仓库是镜像最全的，但是下载速度较慢。
@@ -46,7 +55,9 @@ systemctl restart docker
 
 
 
-##### Docker镜像下载： [Docker Hub](https://hub.docker.com/_/tomcat?tab=tags) 
+## Docker镜像下载
+
+Docker镜像仓库： [Docker Hub](https://hub.docker.com/_/tomcat?tab=tags) 
 
 ```shell
 #启动Docker
@@ -144,7 +155,7 @@ exit
 
 
 
-##### 容器间的通讯方式
+## 容器间的通讯方式
 
 1. container ip：port 容器ip端口
 2. master ip:port 宿主机ip端口

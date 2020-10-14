@@ -6,10 +6,15 @@ categories:
   - SQL
 top: 100
 abbrlink: 8ead567e
+description: MongoDB
 date: 2020-08-27 00:00:00
 ---
 
-##### Docker环境
+## 前言
+
+> MongoDB学习记录
+
+## Docker环境
 
 ```shell
 #进入docker里的mongodb操作界面
@@ -34,7 +39,7 @@ db.updateUser(
 
 
 
-##### MongoDB数据库
+## MongoDB数据库
 
 ```plsql
 #查看所有数据库
@@ -64,7 +69,7 @@ db.COLLECTION_NAME.drop()
 
 
 
-##### 增加
+## 增加
 
 ```plsql
 增加一条_id不存在的数据
@@ -88,9 +93,7 @@ db.collection.insertMany([{"b": 3}, {'c': 4}])
 
 
 
-##### 删除
-
-##### 
+## 删除 
 
 ```plsql
 先查询
@@ -104,9 +107,7 @@ db.COLLECTION_NAME.remove(DELETION_CRITERIA,1)
 
 
 
-##### 修改
-
-##### 
+## 修改
 
 ```plsql
 #修改所有匹配的数据
@@ -157,9 +158,7 @@ db.col.update({'aaa':'1111'},{'$pull':{'name':'xxx'}})
 
 
 
-##### 查询
-
-##### 
+## 查询
 
 ```plsql
 #等于			'name':'xxx'	
@@ -205,7 +204,7 @@ $or  查找多种条件   ({'$or':[{'name':'chen'},{'name':'wang'}]})
 
 
 
-##### MongoDB权限
+## MongoDB权限
 
 ```plsql
 #创建用户
@@ -248,6 +247,8 @@ db.revokeRolesFromUser( "<username>", [ <roles> ], { <writeConcern> })
 ```
 
 
+
+## 角色权限
 
 #### 数据库用户角色（Database User Roles）：
 
