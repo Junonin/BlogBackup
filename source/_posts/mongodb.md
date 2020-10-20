@@ -4,7 +4,7 @@ tags: MongoDB
 categories:
   - Tools
   - SQL
-top: 100
+top: 
 abbrlink: 8ead567e
 description: MongoDB
 date: 2020-08-27 00:00:00

@@ -140,14 +140,12 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/6b0b2e89c6745ceb.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/fd8cb940f3d6d196.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/4c521d9e10ca4a21.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/4886f9c7fc39419f.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/d3e2fbd640f1cd35.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/8b7d880259d93891.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/2e98feeacfa5e0d7.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/a869077cabc42a0c.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/d48e5becd88e8f83.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/eb770c1dac3cef55.jpg

@@ -2,7 +2,7 @@
 title: Wechat
 tags: Wechat
 categories: Tools
-top: 100
+top: 
 abbrlink: b5424c67
 description: wechat
 date: 2019-06-23 00:00:00
@@ -20,8 +20,10 @@ start  C:\"Program Files (x86)"\Tencent\WeChat\wechat.exe
 <!--more-->
 ## 防撤回
 GitHub：[防撤回补丁](https://github.com/huiyadanli/RevokeMsgPatcher)
-GitHub：[防撤回逻辑](https://github.com/36huo/wechat_anti_revoke)
+GitHub：[Mac防撤回补丁](https://github.com/MustangYM/WeChatSeptet-ForMac)
+GitHub：[Mac微信功能拓展](https://github.com/MustangYM/WeChatExtension-ForMac)
 
+GitHub：[防撤回逻辑](https://github.com/36huo/wechat_anti_revoke)
 
 
 

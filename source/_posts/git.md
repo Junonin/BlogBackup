@@ -3,7 +3,7 @@ title: Git
 tags: Git
 categories:
   - Tools
-top: 100
+top: 
 abbrlink: 69c3279c
 description: git
 date: 2019-09-23 00:00:00

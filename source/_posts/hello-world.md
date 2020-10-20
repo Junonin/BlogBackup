@@ -2,7 +2,7 @@
 title: Hello World
 tags: Texts
 categories: Hexo
-top: 100
+top: 
 abbrlink: 4a17b156
 date: 2019-06-01 00:00:00
 ---
