@@ -5,10 +5,13 @@ categories:
   - Tools
 top: 
 abbrlink: 69c3279c
-description: git
+description: GIT学习记录
 date: 2019-09-23 00:00:00
 ---
 
+## 前言
+
+> GIT学习记录
 
 
 ## GIT config

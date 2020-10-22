@@ -6,7 +6,7 @@ categories:
   - SQL
 top: 
 abbrlink: 8ead567e
-description: MongoDB
+description: MongoDB学习记录
 date: 2020-08-27 00:00:00
 ---
 

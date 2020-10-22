@@ -5,7 +5,7 @@ categories:
   - Tools
 top: 
 abbrlink: d67c4ae5
-description: Typora
+description: Typora的图床设置
 date: 2020-09-28 00:00:00
 ---
 

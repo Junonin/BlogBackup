@@ -5,7 +5,7 @@ categories:
   - Tools
 top: 
 abbrlink: e9a5b8d2
-description: winscp,ftp
+description: winscp,ftp同步
 date: 2020-08-29 00:00:00
 ---
 

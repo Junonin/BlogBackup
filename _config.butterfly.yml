@@ -140,6 +140,9 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
+     - https://s1.ax1x.com/2020/10/14/05Z4TH.jpg
+     - https://s1.ax1x.com/2020/10/14/05eP10.jpg
+     - https://s1.ax1x.com/2020/10/22/Birdot.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/6b0b2e89c6745ceb.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/fd8cb940f3d6d196.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/4c521d9e10ca4a21.jpg
@@ -152,9 +155,7 @@ cover:
      - https://ftp.bmp.ovh/imgs/2020/10/b13e9f915a9e2e6c.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/9d0dcb8a9b0e86e0.jpg
      - https://ftp.bmp.ovh/imgs/2020/10/2e2afe8091be2c32.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/c3f156485a2d3058.jpg     
-     - https://s1.ax1x.com/2020/10/14/05Z4TH.jpg
-     - https://s1.ax1x.com/2020/10/14/05eP10.jpg
+     - https://ftp.bmp.ovh/imgs/2020/10/c3f156485a2d3058.jpg    
     # - https://v1.alapi.cn/api/acg
 
     

@@ -5,7 +5,7 @@ categories:
   - Linux
 top: 
 abbrlink: cab4360e
-description: centos
+description: Centos学习记录
 date: 2020-06-01 00:00:00
 ---
 
