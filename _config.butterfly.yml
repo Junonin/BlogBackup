@@ -124,13 +124,6 @@ category_img: false
 #  - category name: xxxxx
 category_per_img:
 
-# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
-# douban:
-#   meta: false
-#   movies_img:
-#   books_img:
-#   games_img:
-
 cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
@@ -357,6 +350,9 @@ facebook_comments:
   order_by: social # social/time/reverse_time
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
 
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
 # Chat Services
 # --------------------------------------
 
@@ -637,6 +633,8 @@ preloader: false
 
 aside:
   enable: true
+  hide: false
+  button: true
   mobile: true # display on mobile
   position: right # left or right
   card_author:
@@ -890,6 +888,7 @@ CDN:
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js                                                                    
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js
