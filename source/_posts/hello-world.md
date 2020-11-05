@@ -10,7 +10,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 <!--more-->
 ## Quick Start
 
-### Create a new post
+### 创建一个新发布 Create a new post
 
 ``` bash
 $ hexo new "My New Post"
@@ -18,7 +18,7 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### 启动服务 Run server
 
 ``` bash
 $ hexo server
@@ -27,7 +27,7 @@ $ hexo s && hexo g
 
 More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### 生成静态文件 Generate static files
 
 ``` bash
 $ hexo generate
@@ -36,7 +36,7 @@ $ hexo s && hexo g
 
 More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### 部署到远程仓库 Deploy to remote sites
 
 ``` bash
 $ hexo deploy
@@ -59,12 +59,11 @@ npm install hexo-deployer-git --save
 hexo clean && hexo g && hexo s
 ```
 
-查看是否本地可以运行[Hexo](http://localhost:4000/)发布
+查看是否本地可以运行[Hexo](http://localhost:4000/)，网站正常后可以发布到远程仓库
 
 ```
 hexo d
 ```
-
 
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
