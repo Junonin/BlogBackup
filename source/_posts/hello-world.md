@@ -56,6 +56,7 @@ npm install hexo-cli -g
 ```
 npm install
 npm install hexo-deployer-git --save
+npm-check -u
 hexo clean && hexo g && hexo s
 ```
 
