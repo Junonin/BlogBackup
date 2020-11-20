@@ -21,7 +21,6 @@ img {
 
 /* h1~h4标题前的图标旋转 */
 /* 修复h1~h4标题前的图标不对齐 */
-
 #article-container.post-content h1:before {
     margin-left: -1.5rem !important;
     margin-top: -0.2rem;
@@ -108,11 +107,6 @@ img {
     background:#fdf6e3;
 }
 
-/* 文章页背景 */
-.layout_post>#post {
-    /* 以下代表白色透明度为0.8 */
-    background: rgba(255,255,255,.8);
-}
 /* 所有背景（包括首页卡片、文章页、页面页等） */
 #aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
     /* 以下代表白色透明度为0.8 */
@@ -120,57 +114,75 @@ img {
 }
 
 /* 版权链接去掉下划线 */
-
 .layout_post .post-copyright .post-copyright-info a {
     text-decoration: none;
 }
 
 /* 目录隐藏按钮颜色 */
-
 #toggle-sidebar {
     color: #e58a8a !important;
 }
 
-
 /* header背景透明 */
-
 #page-header {
     background-color: transparent;
 }
 
-
 /* 页脚透明 */
-
 #footer {
     background: transparent !important;
 }
 
 /* a标签默认颜色 */
-
 #article-container a {
     color: #e58a8a;
     text-decoration: none;
 }
 
 /* 鼠标悬停时的颜色 */
-
 #article-container a:hover {
     color: #e58a8a;
     text-decoration: none;
 }
+
 /*a标签颜色*/
 a {
     color: #e58a8a;
 }
-/*按钮*/
 
+/*按钮*/
 button:hover {
-    cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), auto;
+}
+
+#rightside>div>button,
+#rightside>div>a {
+    display: block;
+    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    color: var(--btn-color);
+    text-align: center;
+    font-size: 16px;
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur)), auto;
+}
+
+#pagination .page-number:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), auto;
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+@media screen and (max-width: 800px) {
+    #aside_content div:not(:last-child) {
+        display: none;
+        font-size: 13px;
+    }
 }
 
 
-/* 打造效果渐变 */
 
+
+/* 打造效果渐变 */
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0 50%;
@@ -227,21 +239,63 @@ button:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-
-/* a标签默认颜色 */
-
-#article-container a {
-    color: #00c4b6;
-    text-decoration: none;
-}
-
 /* 鼠标悬停时的颜色 */
-
 #article-container a:hover {
     color: #e58a8a;
     text-decoration: none;
 }
-/*a标签颜色*/
-a {
-    color: #00c4b6;
+
+
+
+
+
+/* 评论框  */
+
+.vwrap {
+    box-shadow: 2px 2px 5px #bbb;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0px 30px 0px;
+}
+
+
+/* 提交按钮 */
+#vcomment button {
+    padding: 0.3rem 0.8rem;
+    border-color: #fff;
+    background-color: #e58a8a;
+    color: #fff;
+    font-size: 0.7rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* 评论区代码块 */
+
+.v[data-class=v] code {
+    color: #c7254e;
+    background-color: #F9F2F4;
+}
+/* 设置评论框 */
+
+.vcard {
+    box-shadow: 2px 2px 5px #bbb;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+
+/* 取消回复聊天框 */
+
+.vquote .vcard {
+    box-shadow: 2px 2px 5px transparent;
+    background: rgba(255, 255, 255, 0.0);
+    padding: 0px;
 }
