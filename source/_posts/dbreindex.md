@@ -124,7 +124,8 @@ DROP TABLE #temp
 
 ## 结语
 - 操作后可以看到Scan Density **扫描密度** 指标恢复正常
-[![DM5KoR.png](https://s3.ax1x.com/2020/11/20/DM5KoR.png)](https://imgchr.com/i/DM5KoR)
+![DM5KoR.png](https://s3.ax1x.com/2020/11/20/DM5KoR.png)
+
 
 
 {% note red 'fas fa-fan' simple%}
