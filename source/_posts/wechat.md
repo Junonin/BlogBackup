@@ -19,6 +19,8 @@ start  C:\"Program Files (x86)"\Tencent\WeChat\wechat.exe
 start  C:\"Program Files (x86)"\Tencent\WeChat\wechat.exe
 <!--more-->
 
+[![DQlNRg.jpg](https://s3.ax1x.com/2020/11/20/DQlNRg.jpg)](https://imgchr.com/i/DQlNRg)
+
 ## 防撤回
 - GitHub：[防撤回补丁](https://github.com/huiyadanli/RevokeMsgPatcher)
   

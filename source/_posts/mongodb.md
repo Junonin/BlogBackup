@@ -2,7 +2,6 @@
 title: MongoDB
 tags: MongoDB
 categories:
-  - Tools
   - SQL
 top: 
 abbrlink: 8ead567e

@@ -5,7 +5,7 @@ date: 2020-11-20 11:13:36
 description: DBCC DBREINDEX，DBCC SHOWCONTIG，重建索引，索引重建
 tags: SQL
 categories:
-  - Tools
+#  - Tools
   - SQL
 top:
 ---
@@ -128,5 +128,5 @@ DROP TABLE #temp
 
 
 {% note red 'fas fa-fan' simple%}
-附录：[SQL下载]("https://juno.lanzous.com/irRMgikpved)
+附录：[SQL下载](https://juno.lanzous.com/irRMgikpved)
 {% endnote %}

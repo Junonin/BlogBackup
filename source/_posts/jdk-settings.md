@@ -7,6 +7,7 @@ categories:
 abbrlink: bab53ddd
 date: 2020-11-12 18:55:42
 top:
+description: JDK环境变量，JDK脚本
 ---
 
 ## 前言
