@@ -134,23 +134,28 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-     - https://s1.ax1x.com/2020/10/14/05Z4TH.jpg
-     - https://s1.ax1x.com/2020/10/14/05eP10.jpg
-     - https://s1.ax1x.com/2020/10/22/Birdot.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/6b0b2e89c6745ceb.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/fd8cb940f3d6d196.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/4c521d9e10ca4a21.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/4886f9c7fc39419f.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/d3e2fbd640f1cd35.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/8b7d880259d93891.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/a869077cabc42a0c.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/d48e5becd88e8f83.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/eb770c1dac3cef55.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/b13e9f915a9e2e6c.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/9d0dcb8a9b0e86e0.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/2e2afe8091be2c32.jpg
-     - https://ftp.bmp.ovh/imgs/2020/10/c3f156485a2d3058.jpg  
-     - https://s3.ax1x.com/2020/11/26/D03DFP.jpg  
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/1.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/2.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/3.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/4.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/5.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/6.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/7.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/8.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/9.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/10.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/11.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/12.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/13.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/14.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/15.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/16.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/17.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/18.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/19.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/20.jpg   
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/21.jpg
+     - https://cdn.jsdelivr.net/gh/junonin/CloudPic/22.jpg  
     # - https://s1.ax1x.com/2020/11/05/B2j0Zq.jpg
 
     
