@@ -652,7 +652,7 @@ aside:
       link: https://github.com/junonin
   card_announcement:
     enable: true
-    content: <p style="color:#a4b0be">鞋子比年龄大，却看不透人心</p> <a href="https://imgchr.com/i/BVzugs"><img src="https://s1.ax1x.com/2020/10/24/BVzugs.jpg" alt="BVzugs.jpg" border="0" /></a>
+    content: <p style="color:#a4b0be">鞋子比年龄大，却看不透人心</p> <a href="https://github.com/junonin"><img src="https://cdn.jsdelivr.net/gh/junonin/CloudPic/index.png" alt="BVzugs.jpg" border="0" /></a>
   card_pixiv: 
     enable: true
   card_recent_post:
