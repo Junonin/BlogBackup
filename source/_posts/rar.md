@@ -13,8 +13,8 @@ top:
 ## 前言
 
 > 因为需要主从盘，跨服务器之类的备份，记录一下常用的备份脚本
->参考：[Bandizip 命令行参数](https://www.bandisoft.com/bandizip/help/parameter/)
->参考：[Winrar 命令行参数](https://www.cnblogs.com/lidabo/archive/2012/08/10/2632219.html)
+> 参考：[Bandizip 命令行参数](https://www.bandisoft.com/bandizip/help/parameter/)
+> 参考：[Winrar 命令行参数](https://www.cnblogs.com/lidabo/archive/2012/08/10/2632219.html)
 
 
 ## 正文

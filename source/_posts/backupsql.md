@@ -13,7 +13,7 @@ top:
 ## 前言
 
 > 一些业务服务器在同一个服务器上很久没有做全量备份了，需要临时备份一次，就想做一个脚本全部备份一次。
->参考：[SQL Server 批量完整备份](https://www.cnblogs.com/gaizai/p/3542898.html)
+> 参考：[SQL Server 批量完整备份](https://www.cnblogs.com/gaizai/p/3542898.html)
 
 
 ## 单库备份

@@ -13,7 +13,7 @@ top:
 ## 前言
 
 > 因为数据库插入的时候执行时间过长，通过DBCC SHOWCONTIG看到Scan Density **扫描密度** 指标过低，需要利用DBCC DBREINDEX重建索引提高SQL Server性能
->参考：[DBCC SHOWCONTIG 索引碎片查询](https://blog.csdn.net/wangjunhe/article/details/7228208)
+> 参考：[DBCC SHOWCONTIG 索引碎片查询](https://blog.csdn.net/wangjunhe/article/details/7228208)
 
 ## 正文
 - 因为需要遍历整个数据库，然后分析其中的Scan Density低于90%的表，才需要进行做DBCC DBREINDEX，我用了一张临时表，然后将低于90%的数据插入，再遍历出来做DBCC DBREINDEX，最后再删除临时表，如下：
