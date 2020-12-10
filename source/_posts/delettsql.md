@@ -51,7 +51,7 @@ DELETE TOP (20) from table 表名 where (条件)
 
 ```sql
 delete from 表名 where id in (
-select min(id) from 表名 group by 去除重复的字段名列表,....]
+select min(id) from 表名 group by [去除重复的字段名列表,....]
 having  count(1)>1 )
 ```
 

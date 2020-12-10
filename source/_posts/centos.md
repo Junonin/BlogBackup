@@ -165,7 +165,11 @@ kill -9 6832
 ```
 
 
+##### 查看到最新的系统用户登录日志
 
+```shell
+tail -f /var/log/secure
+```
 
 
 
