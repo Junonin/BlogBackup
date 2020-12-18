@@ -56,11 +56,6 @@ algolia_search:
   hits:
     per_page: 6
 
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
-    hits_stats: '${hits} results found in ${time} ms'
-
 # Local search
 local_search:
   enable: true
@@ -156,7 +151,7 @@ cover:
      - https://cdn.jsdelivr.net/gh/junonin/CloudPic/20.jpg   
      - https://cdn.jsdelivr.net/gh/junonin/CloudPic/21.jpg
      - https://cdn.jsdelivr.net/gh/junonin/CloudPic/22.jpg  
-    # - https://s1.ax1x.com/2020/11/05/B2j0Zq.jpg
+    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
     
 # Replace Broken Images (替換無法顯示的圖片)
@@ -207,7 +202,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  auto_open: true # auto open the sidebar
+  style_simple: false
 
 post_copyright:
   enable: true
@@ -274,7 +269,7 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments/Twikoo
   use:
    - Valine
   # - Disqus
@@ -336,6 +331,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  option:         
 
 # utterances
 # https://utteranc.es/
@@ -359,6 +355,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
+
 # Chat Services
 # --------------------------------------
 
@@ -437,10 +434,10 @@ cnzz_analytics: 1279370438
 
 # Google Adsense (谷歌廣告)
 google_adsense:
-  enable: false
+  enable: true
   auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client:
+  client: ca-pub-4281237706981909
   enable_page_level_ads: true
 
 # Insert ads manually (手動插入廣告)
@@ -545,7 +542,7 @@ canvas_nest:
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
-  count: 520 # the number of lines, default: 99.
+  count: 99 # the number of lines, default: 99.
   mobile: false
 
 # Typewriter Effect (打字效果)
@@ -575,6 +572,7 @@ ClickShowText:
     # - LOVE
     # - YOU
   fontSize: 15px
+  random: false               
   mobile: false
 
 # Default display mode (網站默認的顯示模式)
@@ -709,10 +707,13 @@ newest_comments:
     enable: false
     forum:
     api_key:
+  twikoo: false               
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
 
+# Change font size
+change_font_size: false
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
   enable: true 
@@ -852,6 +853,8 @@ Open_Graph_meta: true
 # Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
 fragment_cache: true
 
+# Add the vendor prefixes to ensure compatibility
+css_prefix: true
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
