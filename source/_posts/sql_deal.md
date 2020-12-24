@@ -106,3 +106,36 @@ check_expiration = off ;
 GO
 ```
 
+
+## 查某个表的所有字段
+
+```sql
+
+SELECT GROUP_CONCAT(col.COLUMN_NAME)
+FROM information_schema.COLUMNS col
+WHERE col.TABLE_SCHEMA = 'mysql'
+ AND col.TABLE_NAME = 'user'
+ AND COLUMN_NAME NOT IN ('created_at', 'updated_at')
+INTO @cols;
+
+-- select @cols
+
+SET @s = CONCAT('SELECT ', @cols, ' FROM mysql.user');
+
+select @s
+
+```
+
+## SQLServer 中实现类似MySQL中的group_concat函数的功能
+
+```sql
+SQLServer中没有MySQL中的group_concat函数，可以把分组的数据连接在一起。
+先对a列进行分组，对分组中的b以Xml形式输出，再使用stuff将开关多出的，删掉。
+SELECT
+    a,
+    stuff((SELECT ',' + b FROM #tb WHERE a = t.a FOR xml path('')),1,1,''
+    )AS b from  # tb AS t
+GROUP BY
+    a;
+
+```
