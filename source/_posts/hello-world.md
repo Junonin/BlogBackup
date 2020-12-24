@@ -1,6 +1,6 @@
 ---
 title: Hello World
-tags: Texts
+tags: Hexo
 categories: Hexo
 top: 
 abbrlink: 4a17b156
