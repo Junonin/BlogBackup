@@ -252,3 +252,13 @@ server {
 > server.crt 服务器证书
 >
 > ca.crt 中级证书
+
+
+### Java环境导入509cer证书
+```bash
+keytool -import -v -trustcacerts -alias maven -file C:\Users\JUNO\Desktop\IrrServer.cer -storepass changeit -keystore C:\Program Files\Java\JDK\jre\lib\security\cacerts
+```
+
+
+> - Cloudflare开启后能临时禁用缓存 3 小时
+> [Cloudflare Development Mode](https://support.cloudflare.com/hc/en-us/articles/200168246-Understanding-Cloudflare-Development-Mode)

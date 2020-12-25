@@ -15,10 +15,11 @@ menu:
   #   - Music || /music/ || fas fa-music
   #   - Movie || /movies/ || fas fa-video
   留言板: /comments/ || fas fa-fw fas fa-comments faa-float animated
-  友链: /link/ || fas fa-link faa-flash faa-falling animated
+  Todo: /todo/ || fa fa-book faa-shake animated   
   关于 || fas fa-leaf faa-tada animated: 
      - 我？ || /about/ || fas fa-heart faa-pulse animated
-     - 说说 || /artitalk/ || far fa-comments faa-horizontal animated   
+     - 说说 || /artitalk/ || far fa-comments faa-horizontal animated
+     - 友链 || /link/ || fas fa-link faa-flash faa-falling animated
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
