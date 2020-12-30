@@ -19,8 +19,8 @@ img {
 }
 
 
-/* h1~h4标题前的图标旋转 */
-/* 修复h1~h4标题前的图标不对齐 */
+/* h1~h6标题前的图标旋转 */
+/* 修复h1~h6标题前的图标不对齐 */
 #article-container.post-content h1:before {
     margin-left: -1.5rem !important;
     margin-top: -0.2rem;
@@ -41,6 +41,16 @@ img {
     animation: avatar_turn_around 1s linear infinite;
 }
 
+#article-container h2:before {
+    margin-left: -1.5rem !important;
+    margin-top: -0.2rem;
+    -webkit-animation: avatar_turn_around 1s linear infinite;
+    -moz-animation: avatar_turn_around 1s linear infinite;
+    -o-animation: avatar_turn_around 1s linear infinite;
+    -ms-animation: avatar_turn_around 1s linear infinite;
+    animation: avatar_turn_around 1s linear infinite;
+}
+
 #article-container.post-content h3:before {
     margin-left: -1.5rem !important;
     margin-top: -0.2rem;
@@ -52,6 +62,26 @@ img {
 }
 
 #article-container.post-content h4:before {
+    margin-left: -1.5rem !important;
+    margin-top: -0.2rem;
+    -webkit-animation: avatar_turn_around 1s linear infinite;
+    -moz-animation: avatar_turn_around 1s linear infinite;
+    -o-animation: avatar_turn_around 1s linear infinite;
+    -ms-animation: avatar_turn_around 1s linear infinite;
+    animation: avatar_turn_around 1s linear infinite;
+}
+
+#article-container.post-content h5:before {
+    margin-left: -1.5rem !important;
+    margin-top: -0.2rem;
+    -webkit-animation: avatar_turn_around 1s linear infinite;
+    -moz-animation: avatar_turn_around 1s linear infinite;
+    -o-animation: avatar_turn_around 1s linear infinite;
+    -ms-animation: avatar_turn_around 1s linear infinite;
+    animation: avatar_turn_around 1s linear infinite;
+}
+
+#article-container.post-content h6:before {
     margin-left: -1.5rem !important;
     margin-top: -0.2rem;
     -webkit-animation: avatar_turn_around 1s linear infinite;
