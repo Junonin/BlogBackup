@@ -631,8 +631,10 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - Never put off till tomorrow what you can do today    
+    - All work and no play makes jack a dullboy
     - 今日事&#44;今日畢
+    - Never put off till tomorrow what you can do today
+
    
 # Loading Animation (加載動畫)
 preloader: false
