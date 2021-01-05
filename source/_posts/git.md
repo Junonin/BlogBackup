@@ -11,10 +11,10 @@ date: 2019-09-23 00:00:00
 
 ## 前言
 
-> GIT学习记录
+> Git学习记录
 
 
-## GIT config
+## Git config
 > * 配置config
 配置git个人信息和生成ssh密钥
 打开`git bash`，输入
@@ -28,7 +28,7 @@ date: 2019-09-23 00:00:00
 > * 然后在GitHub导入SSH密匙（C:\Users\JUNO\.ssh\id_rsa.pub）
 <!--more-->
 
-## git绑定远程仓库
+## Git绑定远程仓库
 ```sh
 git remote add origin https://github.com/junonin/junonin.github.io.git
 ```
@@ -41,7 +41,7 @@ git remote -v
 git remote rm github
 ```
 
-## git pull
+## Git pull
 **`git pull`命令的作用是：取回远程主机某个分支的更新，再与本地的指定分支合并。**
 ```sh
 git pull = git fetch + git merge
@@ -66,7 +66,7 @@ git merge local
 ```
 **相比起来`git fetch`更安全一些，因为再merge前，我们可以查看更新的情况，决定是否合并分支**
 
-## git push
+## Git push
 **`git push`命令的作用是：将本地版本库的分支推送到远程服务器上对应的分支。**
 基本用法：
 ```sh
@@ -93,7 +93,7 @@ git push origin ：refs/for/master
 git push origin –delete master
 ```
 
-## git status
+## Git status
 
 *`git status`* 命令用于显示当前Git仓库的状态
 工作树和仓库在被操作的过程中，状态会不断发生变化。在Git操作过程中时常用`git status`命令查看当前状态
@@ -108,24 +108,24 @@ git status -s
 > 出现在左边的M：修改过的文件，已经放入暂存区了
 > MM：被放入暂存区之后又被修改了
 
-## git add
+## Git add
 
 - `git add` 命令后面可以跟：
-  - 单个或多个文件名
-  - 如果是目录，git add将递归地跟踪该目录下的所有文件
-  - .代表所有文件
-  - 或者其他通配符
+  1. 单个或多个文件名
+  2. 如果是目录，git add将递归地跟踪该目录下的所有文件
+  3. 代表所有文件
+  4. 或者其他通配符
 
 git add可以再次更新暂存区中的内容
 
-## git diff
+## Git diff
 
 - `git diff` 命令可以查看工作树、暂存区、最新提交(版本库)之间的差别：
-  - `git diff` :没添加其它选项，默认查看工作树与暂存区之间的差别
-  - `git diff --cached/--staged` ：对比暂存区和版本库之间的差别
-  - `git diff HEAD` ：HEAD是指当前分支中最新一次提交的指针，因此是用来查看工作树和版本库之间的差别
+  1. `git diff` :没添加其它选项，默认查看工作树与暂存区之间的差别
+  2. `git diff --cached/--staged` ：对比暂存区和版本库之间的差别
+  3. `git diff HEAD` ：HEAD是指当前分支中最新一次提交的指针，因此是用来查看工作树和版本库之间的差别
 
-## git commit
+## Git commit
 
 ```sh
 git commit -m "提交信息"
@@ -133,12 +133,35 @@ git commit -m "提交信息"
 
 - Git提供了一个跳过使用暂存区域的方式，只要在提交的时候，给 `git commit` 加上`-a`选项，Git就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过`git add`步骤。
 
-## git rm
+## Git rm
 
 - `git rm`支持如下的选项：
-  - `-n`，`--dry-run` ：演习
-  - `-q`，`--quiet` ：不列出删除的文件
-  - `--cached`：只从索引区删除，本地的文件还存在
-  - `-f`，`--force` ：忽略文件更新状态检查
-  - `-r` ：允许递归删除
-  - `--ignore-unmatch` ：即使没有匹配，也以零状态退出
+  1. `-n`，`--dry-run` ：演习
+  2. `-q`，`--quiet` ：不列出删除的文件
+  3. `--cached`：只从索引区删除，本地的文件还存在
+  4. `-f`，`--force` ：忽略文件更新状态检查
+  5. `-r` ：允许递归删除
+  6. `--ignore-unmatch` ：即使没有匹配，也以零状态退出
+
+## Git clone
+
+```sh
+#全克隆
+git clone https://github.com/Junonin/BlogBackup.git   #HTTPS
+git clone git@github.com:Junonin/BlogBackup.git        #SSH
+
+#单一克隆
+git clone -b master https://github.com/Junonin/BlogBackup.git  # -b branch_name 
+git clone -b git_仓库_分支 --single-branch git_仓库_url
+git clone -b master --single-branch https://github.com/Junonin/BlogBackup.git  #single-branch 拉取单一branch分支
+
+#深度克隆
+#--depth=commit_num 或者 --depth commit_num
+git clone --depth=10 https://github.com/Junonin/BlogBackup.git  ##最近commit_num提交记录的代码
+
+```
+- `git clone`克隆:
+  1. `git clone git_仓库_url` 获取全部branch内容，整体下载时间较长 & 所占磁盘空间较大。
+  2. `git clone -b git_分支名称 git_仓库_url` 根上述 1. 结果一致
+  3. `git clone -b git_分支名称 --single--branch git_仓库_url` 获取指定分支的代码
+  4. `git clone --depth 10 git_仓库_url` 只会获取最近 xx（10条提交记录的）代码，默认是master分支， 如果想要指定分支，可以结合 `-b --single--branch` 使用！

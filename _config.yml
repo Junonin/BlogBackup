@@ -13,7 +13,7 @@ timezone: Asia/Shanghai         # 时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://junonin.github.io
+url: https://junonin.github.io
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
