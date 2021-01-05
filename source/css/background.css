@@ -170,11 +170,11 @@ a,img {
 
 /* 鼠标悬停时的颜色 */
 #article-container a:hover {
-    color: #7b5188;
+    color: #7d599e;
     text-decoration: none;
 }
 .post-copyright a:hover {
-    color: #7b5188;
+    color: #7d599e;
     text-decoration: none;
 }
 
