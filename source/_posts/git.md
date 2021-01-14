@@ -165,3 +165,31 @@ git clone --depth=10 https://github.com/Junonin/BlogBackup.git  ##最近commit_n
   2. `git clone -b git_分支名称 git_仓库_url` 根上述 1. 结果一致
   3. `git clone -b git_分支名称 --single--branch git_仓库_url` 获取指定分支的代码
   4. `git clone --depth 10 git_仓库_url` 只会获取最近 xx（10条提交记录的）代码，默认是master分支， 如果想要指定分支，可以结合 `-b --single--branch` 使用！
+
+
+## Git reset 
+
+```sh
+git reset –-soft    #回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可；
+git reset -–hard    #彻底回退到某个版本，本地的源码也会变为上一个版本的内容，撤销的commit中所包含的更改被冲掉；
+```
+
+## Git stash
+stash命令可用于临时保存和回复修改，可跨分支。
+
+> 注：在未add之前才能执行stash！！！！
+
+```sh
+#保存，save为可选项，message为本次保存的注释
+git stash [save message]     
+#所有保存的记录列表
+git stash list
+#恢复，num是可选项，通过git stash list可查看具体值。只能恢复一次
+git stash pop stash@{num}
+#恢复，num是可选项，通过git stash list可查看具体值。可回复多次
+git stash apply stash@{num}
+#删除某个保存，num是可选项，通过git stash list可查看具体值
+git stash drop stash@{num}
+#删除所有保存
+git stash clear
+```

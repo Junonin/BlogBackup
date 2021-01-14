@@ -70,18 +70,32 @@ git config --global https.proxy https://127.0.0.1:7890
 
 非常常见的解耦场景：一个生产方对应多个消费方(排队取号)
 
+## 万能模板 dev 合并到 master 有冲突
 
+解决把 patch-1 合到 patch-2 时的冲突一般是把 patch-2 反过来合到 patch-1，确保 patch-1 包含 patch-2 所有的提交，github 解决 pr 冲突也是这样的思路
 
+```sh
+- git reset --soft                #回退到某个版本，只回退了commit的信息
+- git stash                        #保存当前工作进度
+- git fetch & merge master       #更新并合并master分支
+- git stash pop                   #恢复工作进度到工作区
+- fix conflict                    #手动解决冲突
+- git commit & merge             #提交合并
+```
 
+## Node.js 后端作为一个服务运行在 Windows 服务器
 
+- [nssm](https://nssm.cc/)
+- docker
 
+## Windows Terminal Preview设置
 
+[settings.json](https://juno.lanzous.com/iJ4M5ka372h)
 
+## 抓包工具
 
-
-
-
-
+- [wireshark](https://www.wireshark.org/)
+- [fiddler](https://www.telerik.com/fiddler)
 
 
 

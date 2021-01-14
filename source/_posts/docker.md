@@ -81,7 +81,7 @@ docker pull xxx[镜像地址]
 
 ---
 
-##### Docker镜像导入导出
+## Docker镜像导入导出
 
 ```shell
 如果因为网络原因可以通过硬盘的方式传输镜像，虽然不规范，但是有效，但是这种方式导出的镜像名称和版本都是null，需要手动修改
@@ -95,7 +95,7 @@ docker tag 镜像id 新镜像名称：版本
 
 ---
 
-##### 容器的操作
+## 容器的操作
 
 ```sh
 #运行容器需要定制具体镜像，如果镜像不存在，会直接下载
@@ -117,7 +117,7 @@ docker ps -a
 
 ```
 
-##### 容器的启动，停止，删除等操作，后续会经常使用到
+## 容器的启动，停止，删除等操作，后续会经常使用到
 
 ```shell
 #重新启动容器
@@ -136,7 +136,7 @@ docker rm $(docker ps -qa)
 
 
 
-##### 宿主机和容器的操作
+## 宿主机和容器的操作
 
 ```shell
 #将宿主机的文件复制到容器内部的指定目录
@@ -153,7 +153,21 @@ docker exec -it 容器id bash
 exit
 ```
 
+## Docker启动mysql
 
+```shell
+docker run --restart=always --name mysql5.7.32 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e TZ=Asia/Shanghai -d mysql:5.7.32 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time_zone='+8:00'
+
+--restart=always:开机启动
+--name mc_mysql:自定义名称
+-p 3306:3306:端口映射
+-e MYSQL_ROOT_PASSWORD=root:设置密码
+-e TZ=Asia/Shanghai:设置时区
+-d daocloud.io/library/mysql:5.7.5:指定国内镜像
+--character-set-server=utf8mb4:指定字符集
+--collation-server=utf8mb4_unicode_ci:指定字符集
+--default-time_zone='+8:00':默认时区
+```
 
 ## 容器间的通讯方式
 
