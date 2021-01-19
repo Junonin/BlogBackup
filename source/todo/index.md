@@ -94,11 +94,18 @@ git config --global https.proxy https://127.0.0.1:7890
 
 ## 抓包工具
 
-- [wireshark](https://www.wireshark.org/)
-- [fiddler](https://www.telerik.com/fiddler)
+- [网关：wireshark](https://www.wireshark.org/)
+- [代理：fiddler](https://www.telerik.com/fiddler)
+- [安卓：NetKeeper]()
 
+## 路由器
 
+- MikroTik
+- UBNT
 
+## 硬盘
+
+- HUH721212ALN604
 
 
 

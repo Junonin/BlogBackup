@@ -3,6 +3,7 @@ title: Typora图床
 tags: Typora
 categories:
   - Tools
+  - Typora
 top: 
 abbrlink: d67c4ae5
 description: Typora的图床设置

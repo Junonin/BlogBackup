@@ -1,31 +1,32 @@
+
 /* 离开当前页面时修改网页标题，回到当前页面时恢复原来标题 */
-window.onload = function() {
-  var OriginTitile = document.title;
-  var titleTime;
-  document.addEventListener('visibilitychange', function() {
-    if(document.hidden) {
-      $('[rel="icon"]').attr('href', "/img/wu.ico");
-      $('[rel="shortcut icon"]').attr('href', "/img/wu.ico");
-      document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
-      clearTimeout(titleTime);
-    } else {
-      $('[rel="icon"]').attr('href', "/img/ye.ico");
-      $('[rel="shortcut icon"]').attr('href', "/img/ye.ico");
-      document.title = '(ฅ>ω<*ฅ) 噫又好了~';
-      titleTime = setTimeout(function() {
-        document.title = OriginTitile;
-      }, 2000);
-	}
-  });
-}  
-  /* 去掉 Banner 图 */
-  var full_page = document.getElementsByClassName("full_page");
-	if (full_page.length != 0) {
-	  full_page[0].style.background = "transparent";
-  }
+var OriginTitile = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function() {
+  if(document.hidden) {
+    $('[rel="icon"]').attr('href', "/img/wu.ico");
+    $('[rel="shortcut icon"]').attr('href', "/img/wu.ico");
+    document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
+    clearTimeout(titleTime);
+  } else {
+    $('[rel="icon"]').attr('href', "/img/ye.ico");
+    $('[rel="shortcut icon"]').attr('href', "/img/ye.ico");
+    document.title = '(ฅ>ω<*ฅ) 噫又好了~';
+    titleTime = setTimeout(function() {
+      document.title = OriginTitile;
+    }, 2000);
+}
+});
+
+
+/* 去掉 Banner 图 */
+var full_page = document.getElementsByClassName("full_page");
+if (full_page.length != 0) {
+  full_page[0].style.background = "transparent";
+}
   
   // 主页气泡
-function qipao() {
+  function qipao() {
     $('#page-header').circleMagic({
         radius: 10,
         density: .2,
@@ -71,8 +72,4 @@ function qipao() {
 
 // 调用气泡方法
 qipao();
-
-
-
-
 

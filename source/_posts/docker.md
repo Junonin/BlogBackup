@@ -2,6 +2,7 @@
 title: Docker
 tags: Docker
 categories:
+  - Linux
   - Docker
 top: 
 abbrlink: f5f9fa9b
@@ -156,9 +157,10 @@ exit
 ## Docker启动mysql
 
 ```shell
-docker run --restart=always --name mysql5.7.32 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e TZ=Asia/Shanghai -d mysql:5.7.32 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time_zone='+8:00'
+docker run --restart=always --privileged=true --name mysql5.7.32 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e TZ=Asia/Shanghai -d mysql:5.7.32 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time_zone='+8:00'
 
 --restart=always:开机启动
+--privileged=true:容器内的root拥有真正root权限，否则容器内root只是外部普通用户权限
 --name mc_mysql:自定义名称
 -p 3306:3306:端口映射
 -e MYSQL_ROOT_PASSWORD=root:设置密码
@@ -167,6 +169,14 @@ docker run --restart=always --name mysql5.7.32 -p 3306:3306 -e MYSQL_ROOT_PASSWO
 --character-set-server=utf8mb4:指定字符集
 --collation-server=utf8mb4_unicode_ci:指定字符集
 --default-time_zone='+8:00':默认时区
+
+挂载docker内文件到宿主机
+-v /mydata/mysql/conf:/etc/mysql：将配置文件夹挂载到主机
+-v /mydata/mysql/log:/var/log/mysql：将日志文件夹挂载到主机
+-v /mydata/mysql/data:/var/lib/mysql：将配置文件夹挂载到主机
+-v /mydata/mysql/conf/my.cnf:/etc/mysql/my.cnf：映射配置文件
+-v /mydata/mysql/conf/conf.d:/etc/mysql/conf.d：映射配置文件
+
 ```
 
 ## 容器间的通讯方式

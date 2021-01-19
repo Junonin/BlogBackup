@@ -197,7 +197,7 @@ button:hover {
     color: var(--btn-color);
     text-align: center;
     font-size: 16px;
-    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur)), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), auto;
 }
 
 #pagination .page-number:hover {
@@ -299,13 +299,12 @@ button:hover {
 
 
 /* 评论区代码块 */
-
 .v[data-class=v] code {
     color: #c7254e;
     background-color: #F9F2F4;
 }
-/* 设置评论框 */
 
+/* 设置评论框 */
 .vcard {
     box-shadow: 2px 2px 5px #bbb;
     background: rgba(255, 255, 255, 0.3);
@@ -316,9 +315,9 @@ button:hover {
 
 
 /* 取消回复聊天框 */
-
 .vquote .vcard {
     box-shadow: 2px 2px 5px transparent;
     background: rgba(255, 255, 255, 0.0);
     padding: 0px;
 }
+

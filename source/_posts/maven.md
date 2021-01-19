@@ -2,11 +2,12 @@
 title: maven
 abbrlink: c6e613d8
 date: 2021-01-06 18:50:12
-categories:
-  - Tools
 description: maven学习记录,maven推送本地包到私服
+categories:
+  - JAVA
+  - Maven
 top: 
-tags:
+tags: Maven
 ---
 
 ## 前言

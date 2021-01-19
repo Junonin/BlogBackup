@@ -3,6 +3,7 @@ title: Git
 tags: Git
 categories:
   - Tools
+  - Git
 top: 
 abbrlink: 69c3279c
 description: GIT学习记录
@@ -13,6 +14,11 @@ date: 2019-09-23 00:00:00
 
 > Git学习记录
 
+## Git 工具更新
+```sh
+git --version
+git update-git-for-windows
+```
 
 ## Git config
 > * 配置config
@@ -27,6 +33,24 @@ date: 2019-09-23 00:00:00
 ```
 > * 然后在GitHub导入SSH密匙（C:\Users\JUNO\.ssh\id_rsa.pub）
 <!--more-->
+
+- 文件名过长错误
+```sh
+git config --system core.longpaths true
+```
+- 禁止git自动将lf转换成crlf
+```sh
+git config --global core.autocrlf false
+```
+- 提交时转换为LF，检出时不转换
+```sh
+git config --global core.autocrlf input
+```
+- 拒绝提交包含混合换行符的文件
+```sh
+git config --global core.safecrlf true
+```
+
 
 ## Git绑定远程仓库
 ```sh
@@ -131,6 +155,12 @@ git add可以再次更新暂存区中的内容
 git commit -m "提交信息"
 ```
 
+```sh
+git add missed-file // missed-file 为遗漏提交文件
+git commit --amend --no-edit
+```
+`--no-edit`表示提交消息不会更改，在 git 上仅为一次提交
+
 - Git提供了一个跳过使用暂存区域的方式，只要在提交的时候，给 `git commit` 加上`-a`选项，Git就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过`git add`步骤。
 
 ## Git rm
@@ -170,8 +200,20 @@ git clone --depth=10 https://github.com/Junonin/BlogBackup.git  ##最近commit_n
 ## Git reset 
 
 ```sh
-git reset –-soft    #回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可；
-git reset -–hard    #彻底回退到某个版本，本地的源码也会变为上一个版本的内容，撤销的commit中所包含的更改被冲掉；
+git reset –-soft    # 回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可；
+git reset -–hard    # 彻底回退到某个版本，本地的源码也会变为上一个版本的内容，撤销的commit中所包含的更改被冲掉；
+
+git reset HEAD <文件名>  #把暂存区的修改撤销掉（unstage），重新放回工作区。
+
+# git版本回退，回退到特定的commit_id版本，可以通过git log查看提交历史，以便确定要回退到哪个版本(commit 之后的即为ID);
+git reset --hard commit_id 
+# 将版本库回退1个版本，不仅仅是将本地版本库的头指针全部重置到指定版本，也会重置暂存区，并且会将工作区代码也回退到这个版本
+git reset --hard HEAD~1
+
+# 修改版本库，保留暂存区，保留工作区
+# 将版本库软回退1个版本，软回退表示将本地版本库的头指针全部重置到指定版本，且将这次提交之后的所有变更都移动到暂存区。
+git reset --soft HEAD~1
+
 ```
 
 ## Git stash

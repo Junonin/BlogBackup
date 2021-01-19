@@ -3,6 +3,7 @@ title: MongoDB
 tags: MongoDB
 categories:
   - SQL
+  - MongoDB
 top: 
 abbrlink: 8ead567e
 description: MongoDB学习记录
