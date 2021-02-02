@@ -85,16 +85,16 @@ sudo systemctl enable sshd				#添加自启动列表
 
 ```shell
 # 开放8080端口
-firewall-cmd --zone=public --add-port=8080/tcp --permanent  		
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
 
 #关闭5672端口
-firewall-cmd --zone=public --remove-port=5672/tcp --permanent 		
+firewall-cmd --zone=public --remove-port=5672/tcp --permanent
 
 # 配置立即生效
-firewall-cmd --reload					  							
+firewall-cmd --reload
 ```
 
- 
+
 
 ###### 查看防火墙所有开放的端口
 
@@ -102,7 +102,7 @@ firewall-cmd --reload
 firewall-cmd --zone=public --list-ports
 ```
 
- 
+
 
 ###### 关闭防火墙
 
@@ -112,7 +112,7 @@ firewall-cmd --zone=public --list-ports
 systemctl stop firewalld.service
 ```
 
- 
+
 
 ###### 查看防火墙状态
 
@@ -120,7 +120,7 @@ systemctl stop firewalld.service
 firewall-cmd --state
 ```
 
- 
+
 
 ###### 查看监听的端口
 
@@ -136,7 +136,7 @@ netstat -lnpt
 yum install -y net-tools
 ```
 
- 
+
 
 ##### 检查端口被哪个进程占用
 
@@ -146,7 +146,7 @@ netstat -lnpt |grep 5672
 
 ![img](https://s1.ax1x.com/2020/09/30/0mOHeA.png)
 
- 
+
 
 ##### 查看进程的详细信息
 
@@ -156,7 +156,7 @@ ps 6832
 
 ![img](https://s1.ax1x.com/2020/09/30/0mOqot.png)
 
- 
+
 
 ##### 中止进程
 

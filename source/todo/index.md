@@ -6,6 +6,7 @@ description: todo list
 ---
 
 ---
+
 ## mysql进阶讲解书籍
 
 - 《 MySQL 技术内幕:InnoDB 存储引擎(第 2 版)》
@@ -17,10 +18,11 @@ description: todo list
 - systemd 的 unit
 - 短时间常驻用 screen、tmux
 - nohup + crontab
-- systemd 
+- systemd
 - supervisor
 
 ## Systemd模板
+
 ```sh
 改名 xxx.service，扔到 /etc/systemd/system 里，然后 systemctl start xxx 启动服务，systemctl enable xxx 开启自动启动
 
@@ -55,6 +57,7 @@ export https_proxy="http://127.0.0.1:7890"
 export http_proxy="http://127.0.0.1:7890"
 export all_proxy="socks5://127.0.0.1:7890"
 ```
+
 设置了 https 代码却使用 git clone git@github.com 没用，因为ssh不走https。
 
 - 配置全局 git 代理：
@@ -96,7 +99,7 @@ git config --global https.proxy https://127.0.0.1:7890
 
 - [网关：wireshark](https://www.wireshark.org/)
 - [代理：fiddler](https://www.telerik.com/fiddler)
-- [安卓：NetKeeper]()
+- [安卓：NetKeeper](xxx)
 
 ## 路由器
 
@@ -106,8 +109,6 @@ git config --global https.proxy https://127.0.0.1:7890
 ## 硬盘
 
 - HUH721212ALN604
-
-
 
 ## 国产数据库
 
@@ -122,7 +123,30 @@ git config --global https.proxy https://127.0.0.1:7890
 ## 视频站搭建
 
 - 苹果 CMS + 海螺模板
+
 ---
 
+二次元随机图: <http://www.dmoe.cc/random.php>
 
+## sql转置
 
+```sql
+
+ select * from (
+    select MpCode,convert(varchar(13),DataTime,120) + ':00:00' as datatime , Rain ,
+ right(convert(varchar(16),DataTime,120),2) as mins  from IrrBMRealRain
+ where MpCode = 'Mp00001386' and convert(varchar(13),DataTime,120) = '2020-09-23 16'
+ ) a PIVOT (sum(Rain) for mins in ([00],[05],[10],[15],[20],[25],[30],[35],[40],[45],[50],[55])) as xxx
+
+```
+
+## SQL Server 常用的83条SQL语句
+
+[SQL Server 常用的83条SQL语句](https://mp.weixin.qq.com/s/0X90yPf_w01M9IYpb11Aww)
+
+## Jenkins在K8S中的三种部署
+
+[Jenkins在K8S中的三种部署](https://mp.weixin.qq.com/s/HsJWg03wm9z5YY-7YBrYJQ)
+
+## Springboot整合log4j2日志全解
+[Springboot整合log4j2日志全解](https://www.cnblogs.com/keeya/p/10101547.html)
