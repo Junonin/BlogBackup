@@ -61,6 +61,65 @@ LEFT JOIN sys.dm_db_file_space_usage b ON a.[file_id]=b.[file_id]
 ORDER BY a.[type]
 ```
 
+## 数据库收缩日志文件
+
+```sql
+
+DECLARE @dbName varchar(128)
+DECLARE @dbNamelog varchar(128)
+DECLARE @sql nvarchar(2000) 
+  
+--创建游标获取所有数据库
+DECLARE tables CURSOR FOR
+   select name from sysdatabases where name not in ('master','tempdb','model','msdb','ReportServer','ReportServerTempDB')
+
+-- 开启游标
+OPEN tables
+--获取光标位置
+FETCH NEXT 
+FROM tables INTO @dbName
+	 
+--FETCH 语句成功
+WHILE @@FETCH_STATUS = 0
+
+BEGIN
+	set @dbNamelog=@dbName + '_log'
+
+	print @dbNamelog
+
+	set @sql='
+ 
+	USE '+@dbName+'
+ 
+	ALTER DATABASE '+@dbName+' SET RECOVERY SIMPLE WITH NO_WAIT
+ 
+	ALTER DATABASE '+@dbName+' SET RECOVERY SIMPLE
+ 
+	USE '+@dbName+'
+ 
+	DBCC SHRINKFILE (N'''+@dbNamelog+''' , 11, TRUNCATEONLY)
+ 
+	USE '+@dbName+'
+ 
+	-- ALTER DATABASE '+@dbName+' SET RECOVERY FULL WITH NO_WAIT
+ 
+	-- ALTER DATABASE '+@dbName+' SET RECOVERY FULL
+ 
+	SELECT file_id, name FROM sys.database_files'
+ 
+	exec(@sql)
+
+   FETCH NEXT
+      FROM tables
+      INTO @dbName
+END
+
+--关闭游标
+CLOSE tables
+
+```
+
 {% note red 'fas fa-fan' simple%}
-附录：[SQL下载](https://juno.lanzous.com/i2l1zitgpib)
+附录：[数据库情况](https://juno.lanzous.com/i2l1zitgpib)
+附录：[数据库收缩日志文件](https://juno.lanzous.com/iiUXml80xif)
 {% endnote %}

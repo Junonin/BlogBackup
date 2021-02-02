@@ -14,6 +14,8 @@ tags: Maven
 
 > maven使用记录，方便日后使用
 
+## maven全面解析
+
 ```xml
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -310,10 +312,28 @@ POM就可以在每个单独的仓库中，为每种类型的构件采取不同�
     converted（仓库管理员从 Maven 1 POM转换过来），partner（直接从伙伴Maven 2仓库同步过来），deployed（从Maven 2实例部 署），verified（被核实时正确的和最终的）。-->  
     <status/> 
   </distributionManagement>  
-  
+
   <!--以值替代名称，Properties可以在整个POM中使用，也可以作为触发条件（见settings.xml配置文件里activation元素的说明）。格式是<name>value</name>。-->  
   <properties/> 
 </project>
 
+
+```
+
+## maven全局排除 spring-boot-starter-logging 依赖
+
+```xml
+
+        <!--全局排除spring-boot-starter-logging内的所有依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
 ```
