@@ -1,5 +1,5 @@
 ---
-title: properties
+title: Spring Pom Properties
 abbrlink: 87c331c7
 date: 2021-01-20 17:16:29
 description: Spring properties yml yaml

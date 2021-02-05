@@ -9,8 +9,8 @@ description: todo list
 
 ## mysql进阶讲解书籍
 
-- 《 MySQL 技术内幕:InnoDB 存储引擎(第 2 版)》
-- 高性能 mysql
+- 《 MySQL 技术内幕:InnoDB 存储引擎(第 2 版) 》
+- 《 高性能mysql(第3版) 》
 - [数据库内核月报](http://mysql.taobao.org/monthly/)
 
 ## Linux下常驻后台运行的程序
@@ -89,11 +89,11 @@ git config --global https.proxy https://127.0.0.1:7890
 ## Node.js 后端作为一个服务运行在 Windows 服务器
 
 - [nssm](https://nssm.cc/)
-- docker
+- [docker](https://www.docker.com/)
 
 ## Windows Terminal Preview设置
 
-[settings.json](https://juno.lanzous.com/iJ4M5ka372h)
+- [settings.json](https://juno.lanzous.com/iJ4M5ka372h)
 
 ## 抓包工具
 
@@ -140,6 +140,18 @@ git config --global https.proxy https://127.0.0.1:7890
 
 ```
 
+## Vim
+
+[Vim](https://mp.weixin.qq.com/s/Q0MVyvmAP96QG0qCMhODuQ)
+
+## AnyDesk 使用 FRP 自建远程桌面连接
+
+[AnyDesk 使用 FRP 自建远程桌面连接](https://mp.weixin.qq.com/s/nV19lLeOS241Bttqu1mQWQ)
+
+## FRP代理工具详解
+
+[FRP代理工具详解](https://mp.weixin.qq.com/s/ai8IFbSlr7gkLRj8xNaESg)
+
 ## SQL Server 常用的83条SQL语句
 
 [SQL Server 常用的83条SQL语句](https://mp.weixin.qq.com/s/0X90yPf_w01M9IYpb11Aww)
@@ -149,4 +161,17 @@ git config --global https.proxy https://127.0.0.1:7890
 [Jenkins在K8S中的三种部署](https://mp.weixin.qq.com/s/HsJWg03wm9z5YY-7YBrYJQ)
 
 ## Springboot整合log4j2日志全解
+
 [Springboot整合log4j2日志全解](https://www.cnblogs.com/keeya/p/10101547.html)
+
+## Linux 最常用命令
+
+[Linux 最常用命令](https://mp.weixin.qq.com/s/2WMxbvkpUrorFmQtMEp93g)
+
+## hashMap的循环
+
+[hashMap的循环](https://mp.weixin.qq.com/s/qSBLva5GBtrDCkIimqazDQ)
+
+## 事务、隔离级别、锁
+
+[事务、隔离级别、锁](https://mp.weixin.qq.com/s/kxLDum-mIDP4mFBfxoaR9Q)
